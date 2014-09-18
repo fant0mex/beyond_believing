@@ -114,11 +114,23 @@ footer {
   footer p {
     font-weight: 300;
     padding: 14px 0 8px;
-    margin-top: 2px; }
-  /* line 116, sass/style.sass */
+    margin-top: 2px;
+    font-size: 12px; }
+    @media only screen and (min-width: 768px) {
+      /* line 112, sass/style.sass */
+      footer p {
+        font-size: 14px; } }
+  /* line 119, sass/style.sass */
   footer i {
     margin: 14px 0 8px 10px; }
     @media only screen and (min-width: 768px) {
-      /* line 116, sass/style.sass */
+      /* line 119, sass/style.sass */
       footer i {
         margin: 14px 0 8px 40px; } }
+  /* line 123, sass/style.sass */
+  footer .fa-2x {
+    font-size: 1.5em; }
+    @media only screen and (min-width: 768px) {
+      /* line 123, sass/style.sass */
+      footer .fa-2x {
+        font-size: 2em; } }
