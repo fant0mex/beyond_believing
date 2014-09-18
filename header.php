@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Beyond Believing</title>
+    <title>
+      <?php wp_title('|',true,'right'); ?>
+      <?php bloginfo('name'); ?>
+    </title>
 
     <?php wp_head(); ?>
 
