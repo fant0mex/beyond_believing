@@ -39,7 +39,9 @@ add_action('init', 'register_theme_menus');
 
 function load_fonts() {
         wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+        wp_register_style('fontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"');
         wp_enqueue_style( 'googleFonts');
+        wp_enqueue_style( 'fontAwesome');
     }
 
 add_action('wp_print_styles', 'load_fonts');

@@ -33,6 +33,7 @@ $site-max-width: 1200px
     @media only screen and (min-width: $break-med)
       @content
 
+//Navigation
 
 *
   font-family: "Open Sans"
@@ -103,5 +104,17 @@ $site-max-width: 1200px
 .navbar-toggle
   margin-top: 18px
 
+//Footer
 
+footer
+  background-color: #206F85
+  color: #FFF
+  p
+    font-weight: 300
+    padding: 14px 0 8px
+    margin-top: 2px
+  i
+    margin: 14px 0 8px 10px
+    +respond-to(not-xs)
+      margin: 14px 0 8px 40px
 
