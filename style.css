@@ -1,0 +1,35 @@
+/* Theme Name: Beyond Believing 2015
+ * Theme URI: tbc
+ * Description: A custom WordPress theme for the Beyond Believing portfloio and blog.
+ * Author: Joe Hobson
+ * Author URI: tbc
+ * Version: 1.0
+ * Tags: clean, light, responsive, custom-post-types, custom-fields, portfolio
+ *
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html */
+ *
+ * /* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+* {
+  font-family: "Open Sans"; }
+
+.navbar {
+  min-height: 66px; }
+  .navbar a {
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 300; }
+
+.menu {
+  list-style: none;
+  display: inline-block;
+  padding-top: 20px;
+  margin-left: 60px; }
+  .menu li {
+    padding: 10px 50px 10px;
+    display: inline; }
