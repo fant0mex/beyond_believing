@@ -19,7 +19,7 @@
 //Media Queries
 
 $break-small: 768px
-$break-med: 991px
+$break-med: 1025px
 $site-max-width: 1200px
 
 @mixin respond-to($media)
@@ -37,26 +37,69 @@ $site-max-width: 1200px
 *
   font-family: "Open Sans"
 
+.navbar-inverse
+  background-color: #206F85
+  border: none
+
 .navbar
   min-height: 66px
   a
     text-decoration: none
     color: #FFF
     text-transform: uppercase
-    font-size: 18px
     font-weight: 300
-// .current-menu-item>a
+    font-family: "Futura"
+    font-size: 12px
+    +respond-to(not-xs)
+      font-size: 18px
+    // .current-menu-item>a
 //   background: #CCC
-
+.navbar-header
+  img
+    width: 50px
+    position: relative
+    margin: 12px 0 4px 40px
+    padding-bottom: 6px
+    +respond-to(not-xs)
+      position: fixed
+      width: 80px
+      left: 50%
+      margin-left: -50px
+      top: 18%
 
 .menu
   list-style: none
   display: inline-block
-  padding-top: 20px
-  margin-left: 60px
+  padding: 0
+  padding-top: 22px
+  margin-left: 10%
+  +respond-to(not-sm)
+    margin-left: 17%
+  +respond-to(screen-xs)
+    padding-top: 0
+    margin-left: 0
   li
-    padding: 10px 50px  10px
+    padding: 10px 10px 0
     display: inline
+    padding-bottom: 4px
+    +respond-to(not-sm)
+      padding: 10px 38px 0
+      display: inline
+    +respond-to(screen-xs)
+      margin-bottom: 4px
+      display: block
 
+#menu-item-18
+  margin-left: 0
+  +respond-to(not-xs)
+    padding-left: 86px
 
+#menu-item-20
+  margin-left: 0
+  padding-right: 0
+  +respond-to(not-xs)
+    padding-right: 86px
+
+.navbar-toggle
+  margin-top: 18px
 

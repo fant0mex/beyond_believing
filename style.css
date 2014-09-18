@@ -13,23 +13,95 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 37, sass/style.sass */
 * {
   font-family: "Open Sans"; }
 
+/* line 40, sass/style.sass */
+.navbar-inverse {
+  background-color: #206F85;
+  border: none; }
+
+/* line 44, sass/style.sass */
 .navbar {
   min-height: 66px; }
+  /* line 46, sass/style.sass */
   .navbar a {
     text-decoration: none;
     color: #FFF;
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 300; }
+    font-weight: 300;
+    font-family: "Futura";
+    font-size: 12px; }
+    @media only screen and (min-width: 768px) {
+      /* line 46, sass/style.sass */
+      .navbar a {
+        font-size: 18px; } }
 
+/* line 58, sass/style.sass */
+.navbar-header img {
+  width: 50px;
+  position: relative;
+  margin: 12px 0 4px 40px;
+  padding-bottom: 6px; }
+  @media only screen and (min-width: 768px) {
+    /* line 58, sass/style.sass */
+    .navbar-header img {
+      position: fixed;
+      width: 80px;
+      left: 50%;
+      margin-left: -50px;
+      top: 18%; } }
+
+/* line 70, sass/style.sass */
 .menu {
   list-style: none;
   display: inline-block;
-  padding-top: 20px;
-  margin-left: 60px; }
+  padding: 0;
+  padding-top: 22px;
+  margin-left: 10%; }
+  @media only screen and (min-width: 1025px) {
+    /* line 70, sass/style.sass */
+    .menu {
+      margin-left: 17%; } }
+  @media only screen and (max-width: 767px) {
+    /* line 70, sass/style.sass */
+    .menu {
+      padding-top: 0;
+      margin-left: 0; } }
+  /* line 81, sass/style.sass */
   .menu li {
-    padding: 10px 50px 10px;
-    display: inline; }
+    padding: 10px 10px 0;
+    display: inline;
+    padding-bottom: 4px; }
+    @media only screen and (min-width: 1025px) {
+      /* line 81, sass/style.sass */
+      .menu li {
+        padding: 10px 38px 0;
+        display: inline; } }
+    @media only screen and (max-width: 767px) {
+      /* line 81, sass/style.sass */
+      .menu li {
+        margin-bottom: 4px;
+        display: block; } }
+
+/* line 92, sass/style.sass */
+#menu-item-18 {
+  margin-left: 0; }
+  @media only screen and (min-width: 768px) {
+    /* line 92, sass/style.sass */
+    #menu-item-18 {
+      padding-left: 86px; } }
+
+/* line 97, sass/style.sass */
+#menu-item-20 {
+  margin-left: 0;
+  padding-right: 0; }
+  @media only screen and (min-width: 768px) {
+    /* line 97, sass/style.sass */
+    #menu-item-20 {
+      padding-right: 86px; } }
+
+/* line 103, sass/style.sass */
+.navbar-toggle {
+  margin-top: 18px; }

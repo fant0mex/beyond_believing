@@ -4,8 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
     <title>Beyond Believing</title>
@@ -25,6 +23,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          <a class"navbar-brand" href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory');?>/images/logo.png"></a>
         </div>
         <div class="navbar-collapse collapse">
           <?php
