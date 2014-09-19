@@ -38,12 +38,36 @@ function register_theme_menus() {
 add_action('init', 'register_theme_menus');
 
 function load_fonts() {
-        wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
-        wp_register_style('fontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"');
-        wp_enqueue_style( 'googleFonts');
-        wp_enqueue_style( 'fontAwesome');
+    wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700');
+    wp_register_style('fontAwesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"');
+    wp_enqueue_style( 'googleFonts');
+    wp_enqueue_style( 'fontAwesome');
     }
 
 add_action('wp_print_styles', 'load_fonts');
+
+function create_widget($name,$id,$description) {
+    register_sidebar(array(
+        'name'=>__($name),
+        'id'=>$id,
+        'description'=>__($description),
+        'before_widget'=>'<div class="widget">',
+        'after_widget'=>'</div>',
+        'before_title'=>'<h3>',
+        'after_title'=>'</h3>'
+        ));
+}
+
+create_widget('Front Page Left','front-left','Displays on the left of the homepage');
+create_widget('Front Page Center','front-center','Displays in the center of the homepage');
+create_widget('Front Page Right','front-right','Displays on the right of the homepage');
+
+create_widget('Page Sidebar','page','Displays on the side of pages with a sidebar');
+
+
+
+
+
+
 
 ?>
