@@ -1,22 +1,19 @@
+<?php
+/*
+  Template Name: Portfolio Grid Template
+*/
+?>
 <?php get_header(); ?>
   <div class="container">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-12">
 
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
             <div class="page-header">
               <h1><?php the_title(); ?></h1>
-              <p><em>
-                By <?php the_author(); ?> on <?php echo the_time('l F j Y'); ?> in <?php the_category(',  '); ?>
-                <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
-              </em></p>
             </div>
             <?php the_content(); ?>
-
-            <hr>
-
-            <?php comments_template(); ?>
 
           <?php endwhile; else: ?>
             <div class="page-header">
@@ -26,8 +23,24 @@
 
           <?php endif; ?>
         </div>
+      </div>
 
-          <?php get_sidebar('blog'); ?>
+      <div class="row">
+
+        <?php
+          $args = array(
+            'post_type'=>'portfolio'
+          );
+          $the_query = new WP_Query($args);
+        ?>
+
+        <?php if (have_posts()) : while($the_query->have_posts()) : $the_query->the_post();?>
+
+        <div class="col-sm-3 portfolio-piece">
+          <h3><?php the_title(); ?></h3>
+        </div>
+
+        <?php endwhile; endif; ?>
 
       </div>
 

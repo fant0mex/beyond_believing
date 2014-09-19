@@ -26,6 +26,7 @@ add_action('wp_enqueue_scripts','theme_js');
 show_admin_bar(false);
 
 add_theme_support('menus');
+add_theme_support('post-thumbnails');
 
 function register_theme_menus() {
     register_nav_menus(
