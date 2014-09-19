@@ -151,35 +151,39 @@
 .widget {
   margin: 10px 0 30px; }
 
-/* line 153, sass/style.sass */
+/* line 154, sass/style.sass */
+.portfolio-piece img {
+  max-width: 100%; }
+
+/* line 160, sass/style.sass */
 article.post {
   margin: 20px 0 40px; }
 
-/* line 158, sass/style.sass */
+/* line 165, sass/style.sass */
 footer {
   background-color: #0a6683;
   color: #FFF; }
-  /* line 161, sass/style.sass */
+  /* line 168, sass/style.sass */
   footer p {
     font-weight: 300;
     padding: 14px 0 8px;
     margin-top: 2px;
     font-size: 12px; }
     @media only screen and (min-width: 768px) {
-      /* line 161, sass/style.sass */
+      /* line 168, sass/style.sass */
       footer p {
         font-size: 14px; } }
-  /* line 168, sass/style.sass */
+  /* line 175, sass/style.sass */
   footer i {
     margin: 14px 0 8px 10px; }
     @media only screen and (min-width: 768px) {
-      /* line 168, sass/style.sass */
+      /* line 175, sass/style.sass */
       footer i {
         margin: 14px 0 8px 40px; } }
-  /* line 172, sass/style.sass */
+  /* line 179, sass/style.sass */
   footer .fa-2x {
     font-size: 1.5em; }
     @media only screen and (min-width: 768px) {
-      /* line 172, sass/style.sass */
+      /* line 179, sass/style.sass */
       footer .fa-2x {
         font-size: 2em; } }
