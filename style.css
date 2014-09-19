@@ -90,12 +90,12 @@
       padding-left: 86px; } }
 
 /* line 97, sass/style.sass */
-#menu-item-20 {
+#menu-item-40 {
   margin-left: 0;
   padding-right: 0; }
   @media only screen and (min-width: 768px) {
     /* line 97, sass/style.sass */
-    #menu-item-20 {
+    #menu-item-40 {
       padding-right: 86px; } }
 
 /* line 103, sass/style.sass */
@@ -151,31 +151,35 @@
 .widget {
   margin: 10px 0 30px; }
 
-/* line 152, sass/style.sass */
+/* line 153, sass/style.sass */
+article.post {
+  margin: 20px 0 40px; }
+
+/* line 158, sass/style.sass */
 footer {
   background-color: #0a6683;
   color: #FFF; }
-  /* line 155, sass/style.sass */
+  /* line 161, sass/style.sass */
   footer p {
     font-weight: 300;
     padding: 14px 0 8px;
     margin-top: 2px;
     font-size: 12px; }
     @media only screen and (min-width: 768px) {
-      /* line 155, sass/style.sass */
+      /* line 161, sass/style.sass */
       footer p {
         font-size: 14px; } }
-  /* line 162, sass/style.sass */
+  /* line 168, sass/style.sass */
   footer i {
     margin: 14px 0 8px 10px; }
     @media only screen and (min-width: 768px) {
-      /* line 162, sass/style.sass */
+      /* line 168, sass/style.sass */
       footer i {
         margin: 14px 0 8px 40px; } }
-  /* line 166, sass/style.sass */
+  /* line 172, sass/style.sass */
   footer .fa-2x {
     font-size: 1.5em; }
     @media only screen and (min-width: 768px) {
-      /* line 166, sass/style.sass */
+      /* line 172, sass/style.sass */
       footer .fa-2x {
         font-size: 2em; } }
