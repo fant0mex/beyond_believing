@@ -17,6 +17,59 @@
     </div>
 
     <div class="container">
+      <div class="activities">
+        <div class="row">
+          <div class="col-sm-2">
+            <i class="fa fa-desktop fa-5x"></i>
+          </div>
+          <div class="col-sm-4">
+            <h4>DESIGN</h4>
+            <p>
+              Donec id elit non mi porta gravida at eget metus.
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <i class="fa fa-heart fa-5x"></i>
+          </div>
+          <div class="col-sm-4">
+            <h4>COSPLAY</h4>
+            <p>
+              Donec id elit non mi porta gravida at eget metus.
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <i class="fa fa-camera-retro fa-5x"></i>
+          </div>
+          <div class="col-sm-4">
+            <h4>PHOTOGRAPHY</h4>
+            <p>
+              Donec id elit non mi porta gravida at eget metus.
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+          </div>
+          <div class="col-sm-2">
+            <i class="fa fa-video-camera fa-5x"></i>
+          </div>
+          <div class="col-sm-4">
+            <h4>VIDEO</h4>
+            <p>
+              Donec id elit non mi porta gravida at eget metus.
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">
