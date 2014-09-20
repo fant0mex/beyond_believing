@@ -111,11 +111,14 @@ p,h1,h2,h3,h4,li
 //Hero
 
 .jumbotron
-  padding-bottom: 60px
-  background-color: #ccc
+  padding-bottom: 300px
+  background-color: #CCC
+  background: 60% 0 no-repeat
+  background-size: 100% auto
+  // margin-top: 54px
 
 .name
-  margin-top: 12%
+  margin-top: 20%
   float: left
   margin-left: 29%
   padding-right: 1%
@@ -129,7 +132,7 @@ p,h1,h2,h3,h4,li
     line-height: 54px
 .interests
   float: left
-  margin-top: 11.8%
+  margin-top: 19.8%
   h3
     font-family: "Futura"
     color: #FFF
@@ -199,4 +202,34 @@ footer
     font-size: 1.5em
     +respond-to(not-xs)
       font-size: 2em
+
+//Off-Canvas
+
++respond-to(screen-xs)
+  .row-offcanvas
+    position: relative
+    -webkit-transition: all .25s ease-out
+    -o-transition: all .25s ease-out
+    transition: all .25s ease-out
+  .row-offcanvas-right
+    right: 0
+  .row-offcanvas-left
+    left: 0
+  .row-offcanvas-right .sidebar-offcanvas
+    right: -50%
+    /* 6 columns */
+  .row-offcanvas-left .sidebar-offcanvas
+    left: -50%
+    /* 6 columns */
+  .row-offcanvas-right.active
+    right: 50%
+    /* 6 columns */
+  .row-offcanvas-left.active
+    left: 50%
+    /* 6 columns */
+  .sidebar-offcanvas
+    position: absolute
+    top: 0
+    width: 50%
+
 

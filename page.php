@@ -1,8 +1,10 @@
 <?php get_header(); ?>
   <div class="container">
-      <div class="row">
+      <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-md-9">
-
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle Sidebar</button>
+          </p>
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
             <div class="page-header">
