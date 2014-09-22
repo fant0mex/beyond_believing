@@ -166,7 +166,7 @@ p, h1, h2, h3, h4, li {
 
 /* line 158, sass/style.sass */
 .fa-5x {
-  margin-left: 45%;
+  margin-left: 40%;
   color: #0e84a9;
   margin-top: 2%;
   margin-bottom: 5%; }
@@ -319,7 +319,7 @@ cite {
     /* line 271, sass/style.sass */
     .latest h3 {
       font-size: 1.6vw;
-      margin: 8% 0 5%; } }
+      margin: 6% 0 5%; } }
 /* line 283, sass/style.sass */
 .latest a {
   float: left;
