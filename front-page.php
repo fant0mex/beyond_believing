@@ -89,7 +89,7 @@
 
                 <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
 
-                <?php endwhile; endif; ?>
+                <?php endwhile; endif; wp_reset_postdata(); ?>
               </div>
             </div>
           </div>
@@ -103,12 +103,25 @@
         We do not need magic to transform our world. We carry all of the power we need inside ourselves already.
       </blockquote>
         <cite>- J.K. Rowling</cite>
-
     </div>
 
     <div class="container">
+      <div class="latest">
+        <h3>Latest Blog Posts</h3>
+
+        <?php $the_query = new WP_Query( 'showposts=3' ); ?>
+        <?php if (have_posts()) :  while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+        <?php
+          $thumbnail_id = get_post_thumbnail_id();
+          $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'medium', true);
+        ?>
+        <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+
+        <?php endwhile; endif; wp_reset_postdata(); ?>
+
+      </div>
       <!-- Example row of columns -->
-      <div class="row">
+<!--       <div class="row">
         <div class="col-md-4">
           <?php if (dynamic_sidebar('front-left')); ?>
         </div>
@@ -118,6 +131,6 @@
         <div class="col-md-4">
           <?php if (dynamic_sidebar('front-right')); ?>
         </div>
-      </div>
+      </div> -->
 
 <?php get_footer(); ?>

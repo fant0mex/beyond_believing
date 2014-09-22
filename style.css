@@ -305,111 +305,132 @@ cite {
     cite {
       font-size: 1.4vw; } }
 
-/* line 272, sass/style.sass */
+/* line 271, sass/style.sass */
+.latest h3 {
+  font-family: "Futura";
+  text-transform: uppercase;
+  color: #0e84a9;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 0.9;
+  font-size: 3.7vw;
+  margin: 7% 0 5%; }
+  @media only screen and (min-width: 768px) {
+    /* line 271, sass/style.sass */
+    .latest h3 {
+      font-size: 1.6vw;
+      margin: 8% 0 5%; } }
+/* line 283, sass/style.sass */
+.latest a {
+  float: left;
+  position: relative;
+  padding-bottom: 6%; }
+
+/* line 290, sass/style.sass */
 .page-header {
   margin-top: 100px;
   color: #444; }
 
-/* line 276, sass/style.sass */
+/* line 294, sass/style.sass */
 .sidebar {
   margin-top: 100px; }
-  /* line 278, sass/style.sass */
+  /* line 296, sass/style.sass */
   .sidebar h3 {
     color: #888; }
 
-/* line 281, sass/style.sass */
+/* line 299, sass/style.sass */
 .widget {
   margin: 10px 0 30px; }
 
-/* line 288, sass/style.sass */
+/* line 306, sass/style.sass */
 .portfolio-piece img {
   max-width: 100%; }
 
-/* line 291, sass/style.sass */
+/* line 309, sass/style.sass */
 .portfolio-image img {
   max-width: 100%; }
 
-/* line 294, sass/style.sass */
+/* line 312, sass/style.sass */
 .prev-next {
   margin-top: 32px;
   font-size: 18px; }
   @media only screen and (min-width: 768px) {
-    /* line 294, sass/style.sass */
+    /* line 312, sass/style.sass */
     .prev-next {
       font-size: 24px;
       margin-top: 30px;
       text-align: right; } }
 
-/* line 308, sass/style.sass */
+/* line 326, sass/style.sass */
 article.post {
   margin: 20px 0 40px; }
 
-/* line 313, sass/style.sass */
+/* line 331, sass/style.sass */
 footer {
   background-color: #0a6683;
   color: #FFF; }
-  /* line 316, sass/style.sass */
+  /* line 334, sass/style.sass */
   footer p {
     font-weight: 300;
     padding: 14px 0 8px;
     margin-top: 2px;
     font-size: 12px; }
     @media only screen and (min-width: 768px) {
-      /* line 316, sass/style.sass */
+      /* line 334, sass/style.sass */
       footer p {
         font-size: 14px; } }
-  /* line 323, sass/style.sass */
+  /* line 341, sass/style.sass */
   footer i {
     margin: 14px 0 8px 10px; }
     @media only screen and (min-width: 768px) {
-      /* line 323, sass/style.sass */
+      /* line 341, sass/style.sass */
       footer i {
         margin: 14px 0 8px 40px; } }
-  /* line 327, sass/style.sass */
+  /* line 345, sass/style.sass */
   footer .fa-2x {
     font-size: 1.5em; }
     @media only screen and (min-width: 768px) {
-      /* line 327, sass/style.sass */
+      /* line 345, sass/style.sass */
       footer .fa-2x {
         font-size: 2em; } }
 
 @media only screen and (max-width: 767px) {
-  /* line 335, sass/style.sass */
+  /* line 353, sass/style.sass */
   .row-offcanvas {
     position: relative;
     -webkit-transition: all 0.25s ease-out;
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out; }
 
-  /* line 340, sass/style.sass */
+  /* line 358, sass/style.sass */
   .row-offcanvas-right {
     right: 0; }
 
-  /* line 342, sass/style.sass */
+  /* line 360, sass/style.sass */
   .row-offcanvas-left {
     left: 0; }
 
-  /* line 344, sass/style.sass */
+  /* line 362, sass/style.sass */
   .row-offcanvas-right .sidebar-offcanvas {
     right: -50%;
     /* 6 columns */ }
 
-  /* line 347, sass/style.sass */
+  /* line 365, sass/style.sass */
   .row-offcanvas-left .sidebar-offcanvas {
     left: -50%;
     /* 6 columns */ }
 
-  /* line 350, sass/style.sass */
+  /* line 368, sass/style.sass */
   .row-offcanvas-right.active {
     right: 50%;
     /* 6 columns */ }
 
-  /* line 353, sass/style.sass */
+  /* line 371, sass/style.sass */
   .row-offcanvas-left.active {
     left: 50%;
     /* 6 columns */ }
 
-  /* line 356, sass/style.sass */
+  /* line 374, sass/style.sass */
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
