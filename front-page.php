@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header();?>
 
 <!-- Main jumbotron for a primary marketing message or call to action -->
       <?php if (has_post_thumbnail( $post->ID ) ): ?>
@@ -27,7 +27,6 @@
             <p>
               Donec id elit non mi porta gravida at eget metus.
               Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-              Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             </p>
           </div>
           <div class="col-sm-2">
@@ -38,7 +37,6 @@
             <p>
               Donec id elit non mi porta gravida at eget metus.
               Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-              Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             </p>
           </div>
         </div>
@@ -51,7 +49,6 @@
             <p>
               Donec id elit non mi porta gravida at eget metus.
               Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-              Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             </p>
           </div>
           <div class="col-sm-2">
@@ -62,9 +59,41 @@
             <p>
               Donec id elit non mi porta gravida at eget metus.
               Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-              Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix">
+      <div class="projects">
+        <div class="container">
+          <h3>Most Recent Projects</h3>
+          <div class="row">
+            <div class="container">
+              <div class="my-work">
+                <?php
+                  $args = array(
+                  'post_type'=>'portfolio',
+                  'posts_per_page' => 4,
+                  );
+                  $the_query = new WP_Query($args);
+                ?>
+
+                <?php if (have_posts()) : while($the_query->have_posts()) : $the_query->the_post();?>
+
+                <?php
+                  $thumbnail_id = get_post_thumbnail_id();
+                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'medium', true);
+                ?>
+
+                <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+
+                <?php endwhile; endif; ?>
+              </div>
+            </div>
+          </div>
+            <a href="portfolio" class="see-more">view all my work &nbsp; ></a>
         </div>
       </div>
     </div>

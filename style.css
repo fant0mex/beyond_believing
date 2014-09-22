@@ -165,127 +165,196 @@ p, h1, h2, h3, h4, li {
 
 /* line 158, sass/style.sass */
 .fa-5x {
-  margin-top: 25%;
   margin-left: 45%;
-  color: #0e84a9; }
+  color: #0e84a9;
+  margin-top: 2%;
+  margin-bottom: 5%; }
+  @media only screen and (min-width: 768px) {
+    /* line 158, sass/style.sass */
+    .fa-5x {
+      margin-top: 25%;
+      margin-bottom: 0; } }
 
-/* line 163, sass/style.sass */
+/* line 167, sass/style.sass */
 .activities {
-  margin-top: 3%; }
-  /* line 165, sass/style.sass */
+  margin-top: 2%;
+  padding-bottom: 10%; }
+  @media only screen and (min-width: 768px) {
+    /* line 167, sass/style.sass */
+    .activities {
+      margin-top: 3%;
+      padding-bottom: 8%; } }
+  /* line 173, sass/style.sass */
   .activities h4 {
     font-family: "Futura";
     color: #0e84a9;
     text-transform: uppercase;
     letter-spacing: -1px;
     line-height: 0.9;
-    font-size: 1.3vw; }
+    font-size: 3.3vw; }
+    @media only screen and (min-width: 768px) {
+      /* line 173, sass/style.sass */
+      .activities h4 {
+        font-size: 1.3vw; } }
 
-/* line 176, sass/style.sass */
+/* line 184, sass/style.sass */
+.projects {
+  background-color: lightgray;
+  padding-bottom: 10%; }
+  @media only screen and (min-width: 768px) {
+    /* line 184, sass/style.sass */
+    .projects {
+      padding-bottom: 4%; } }
+  /* line 189, sass/style.sass */
+  .projects h3 {
+    font-family: "Futura";
+    text-transform: uppercase;
+    color: #0e84a9;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 0.9;
+    font-size: 3.7vw;
+    margin: 7% 0 5%; }
+    @media only screen and (min-width: 768px) {
+      /* line 189, sass/style.sass */
+      .projects h3 {
+        font-size: 1.6vw;
+        margin: 4% 0 3%; } }
+  /* line 201, sass/style.sass */
+  .projects a {
+    float: left;
+    position: relative; }
+
+/* line 204, sass/style.sass */
+.my-work {
+  padding-bottom: 10%; }
+
+/* line 206, sass/style.sass */
+a.see-more {
+  float: none;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #0e84a9;
+  padding: 15px 30px;
+  border: 2px solid #0e84a9;
+  border-radius: 4px;
+  margin-left: 20%;
+  margin-top: 10%;
+  font-family: "Open Sans";
+  font-size: 14px; }
+  @media only screen and (min-width: 768px) {
+    /* line 206, sass/style.sass */
+    a.see-more {
+      font-size: 18px;
+      margin-left: 40%;
+      margin-top: 4%; } }
+
+/* line 227, sass/style.sass */
 .page-header {
   margin-top: 100px;
   color: #444; }
 
-/* line 180, sass/style.sass */
+/* line 231, sass/style.sass */
 .sidebar {
   margin-top: 100px; }
-  /* line 182, sass/style.sass */
+  /* line 233, sass/style.sass */
   .sidebar h3 {
     color: #888; }
 
-/* line 185, sass/style.sass */
+/* line 236, sass/style.sass */
 .widget {
   margin: 10px 0 30px; }
 
-/* line 192, sass/style.sass */
+/* line 243, sass/style.sass */
 .portfolio-piece img {
   max-width: 100%; }
 
-/* line 195, sass/style.sass */
+/* line 246, sass/style.sass */
 .portfolio-image img {
   max-width: 100%; }
 
-/* line 198, sass/style.sass */
+/* line 249, sass/style.sass */
 .prev-next {
   margin-top: 32px;
   font-size: 18px; }
   @media only screen and (min-width: 768px) {
-    /* line 198, sass/style.sass */
+    /* line 249, sass/style.sass */
     .prev-next {
       font-size: 24px;
       margin-top: 30px;
       text-align: right; } }
 
-/* line 212, sass/style.sass */
+/* line 263, sass/style.sass */
 article.post {
   margin: 20px 0 40px; }
 
-/* line 217, sass/style.sass */
+/* line 268, sass/style.sass */
 footer {
   background-color: #0a6683;
   color: #FFF; }
-  /* line 220, sass/style.sass */
+  /* line 271, sass/style.sass */
   footer p {
     font-weight: 300;
     padding: 14px 0 8px;
     margin-top: 2px;
     font-size: 12px; }
     @media only screen and (min-width: 768px) {
-      /* line 220, sass/style.sass */
+      /* line 271, sass/style.sass */
       footer p {
         font-size: 14px; } }
-  /* line 227, sass/style.sass */
+  /* line 278, sass/style.sass */
   footer i {
     margin: 14px 0 8px 10px; }
     @media only screen and (min-width: 768px) {
-      /* line 227, sass/style.sass */
+      /* line 278, sass/style.sass */
       footer i {
         margin: 14px 0 8px 40px; } }
-  /* line 231, sass/style.sass */
+  /* line 282, sass/style.sass */
   footer .fa-2x {
     font-size: 1.5em; }
     @media only screen and (min-width: 768px) {
-      /* line 231, sass/style.sass */
+      /* line 282, sass/style.sass */
       footer .fa-2x {
         font-size: 2em; } }
 
 @media only screen and (max-width: 767px) {
-  /* line 239, sass/style.sass */
+  /* line 290, sass/style.sass */
   .row-offcanvas {
     position: relative;
     -webkit-transition: all 0.25s ease-out;
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out; }
 
-  /* line 244, sass/style.sass */
+  /* line 295, sass/style.sass */
   .row-offcanvas-right {
     right: 0; }
 
-  /* line 246, sass/style.sass */
+  /* line 297, sass/style.sass */
   .row-offcanvas-left {
     left: 0; }
 
-  /* line 248, sass/style.sass */
+  /* line 299, sass/style.sass */
   .row-offcanvas-right .sidebar-offcanvas {
     right: -50%;
     /* 6 columns */ }
 
-  /* line 251, sass/style.sass */
+  /* line 302, sass/style.sass */
   .row-offcanvas-left .sidebar-offcanvas {
     left: -50%;
     /* 6 columns */ }
 
-  /* line 254, sass/style.sass */
+  /* line 305, sass/style.sass */
   .row-offcanvas-right.active {
     right: 50%;
     /* 6 columns */ }
 
-  /* line 257, sass/style.sass */
+  /* line 308, sass/style.sass */
   .row-offcanvas-left.active {
     left: 50%;
     /* 6 columns */ }
 
-  /* line 260, sass/style.sass */
+  /* line 311, sass/style.sass */
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
