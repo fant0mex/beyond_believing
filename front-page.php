@@ -99,6 +99,14 @@
     </div>
 
     <div class="container">
+      <blockquote>
+        We do not need magic to transform our world. We carry all of the power we need inside ourselves already.
+      </blockquote>
+        <cite>- J.K. Rowling</cite>
+
+    </div>
+
+    <div class="container">
       <!-- Example row of columns -->
       <div class="row">
         <div class="col-md-4">

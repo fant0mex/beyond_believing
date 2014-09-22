@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Theme Name: Beyond Believing 2015
  * Theme URI: tbc
  * Description: A custom WordPress theme for the Beyond Believing portfloio and blog.
@@ -250,111 +251,165 @@ a.see-more {
       margin-left: 40%;
       margin-top: 4%; } }
 
-/* line 227, sass/style.sass */
+/* line 226, sass/style.sass */
+blockquote {
+  position: relative;
+  margin: 6% 0;
+  padding: 10px 30px;
+  text-align: center;
+  font-size: 4vw;
+  border: none;
+  font-weight: 300;
+  font-family: "Open Sans"; }
+  @media only screen and (min-width: 768px) {
+    /* line 226, sass/style.sass */
+    blockquote {
+      font-size: 1.7vw;
+      margin: 4% 6% 0 10%; } }
+
+/* line 239, sass/style.sass */
+blockquote:before, blockquote:after {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  font-size: 6vw;
+  line-height: 0.5;
+  font-family: "Helvetica";
+  font-weight: 300; }
+  @media only screen and (min-width: 768px) {
+    /* line 239, sass/style.sass */
+    blockquote:before, blockquote:after {
+      font-size: 2.2vw; } }
+
+/* line 250, sass/style.sass */
+blockquote:before {
+  top: 0;
+  left: 0;
+  content: "“"; }
+
+/* line 255, sass/style.sass */
+blockquote:after {
+  top: 0px;
+  right: 0;
+  content: "”"; }
+
+/* line 260, sass/style.sass */
+cite {
+  font-family: "Open Sans";
+  font-size: 4vw;
+  float: right;
+  margin-right: 18%;
+  font-weight: 300; }
+  @media only screen and (min-width: 768px) {
+    /* line 260, sass/style.sass */
+    cite {
+      font-size: 1.4vw; } }
+
+/* line 272, sass/style.sass */
 .page-header {
   margin-top: 100px;
   color: #444; }
 
-/* line 231, sass/style.sass */
+/* line 276, sass/style.sass */
 .sidebar {
   margin-top: 100px; }
-  /* line 233, sass/style.sass */
+  /* line 278, sass/style.sass */
   .sidebar h3 {
     color: #888; }
 
-/* line 236, sass/style.sass */
+/* line 281, sass/style.sass */
 .widget {
   margin: 10px 0 30px; }
 
-/* line 243, sass/style.sass */
+/* line 288, sass/style.sass */
 .portfolio-piece img {
   max-width: 100%; }
 
-/* line 246, sass/style.sass */
+/* line 291, sass/style.sass */
 .portfolio-image img {
   max-width: 100%; }
 
-/* line 249, sass/style.sass */
+/* line 294, sass/style.sass */
 .prev-next {
   margin-top: 32px;
   font-size: 18px; }
   @media only screen and (min-width: 768px) {
-    /* line 249, sass/style.sass */
+    /* line 294, sass/style.sass */
     .prev-next {
       font-size: 24px;
       margin-top: 30px;
       text-align: right; } }
 
-/* line 263, sass/style.sass */
+/* line 308, sass/style.sass */
 article.post {
   margin: 20px 0 40px; }
 
-/* line 268, sass/style.sass */
+/* line 313, sass/style.sass */
 footer {
   background-color: #0a6683;
   color: #FFF; }
-  /* line 271, sass/style.sass */
+  /* line 316, sass/style.sass */
   footer p {
     font-weight: 300;
     padding: 14px 0 8px;
     margin-top: 2px;
     font-size: 12px; }
     @media only screen and (min-width: 768px) {
-      /* line 271, sass/style.sass */
+      /* line 316, sass/style.sass */
       footer p {
         font-size: 14px; } }
-  /* line 278, sass/style.sass */
+  /* line 323, sass/style.sass */
   footer i {
     margin: 14px 0 8px 10px; }
     @media only screen and (min-width: 768px) {
-      /* line 278, sass/style.sass */
+      /* line 323, sass/style.sass */
       footer i {
         margin: 14px 0 8px 40px; } }
-  /* line 282, sass/style.sass */
+  /* line 327, sass/style.sass */
   footer .fa-2x {
     font-size: 1.5em; }
     @media only screen and (min-width: 768px) {
-      /* line 282, sass/style.sass */
+      /* line 327, sass/style.sass */
       footer .fa-2x {
         font-size: 2em; } }
 
 @media only screen and (max-width: 767px) {
-  /* line 290, sass/style.sass */
+  /* line 335, sass/style.sass */
   .row-offcanvas {
     position: relative;
     -webkit-transition: all 0.25s ease-out;
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out; }
 
-  /* line 295, sass/style.sass */
+  /* line 340, sass/style.sass */
   .row-offcanvas-right {
     right: 0; }
 
-  /* line 297, sass/style.sass */
+  /* line 342, sass/style.sass */
   .row-offcanvas-left {
     left: 0; }
 
-  /* line 299, sass/style.sass */
+  /* line 344, sass/style.sass */
   .row-offcanvas-right .sidebar-offcanvas {
     right: -50%;
     /* 6 columns */ }
 
-  /* line 302, sass/style.sass */
+  /* line 347, sass/style.sass */
   .row-offcanvas-left .sidebar-offcanvas {
     left: -50%;
     /* 6 columns */ }
 
-  /* line 305, sass/style.sass */
+  /* line 350, sass/style.sass */
   .row-offcanvas-right.active {
     right: 50%;
     /* 6 columns */ }
 
-  /* line 308, sass/style.sass */
+  /* line 353, sass/style.sass */
   .row-offcanvas-left.active {
     left: 50%;
     /* 6 columns */ }
 
-  /* line 311, sass/style.sass */
+  /* line 356, sass/style.sass */
   .sidebar-offcanvas {
     position: absolute;
     top: 0;
