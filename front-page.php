@@ -82,12 +82,16 @@
 
                 <?php if (have_posts()) : while($the_query->have_posts()) : $the_query->the_post();?>
 
-                <?php
-                  $thumbnail_id = get_post_thumbnail_id();
-                  $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'medium', true);
-                ?>
+                <div class="col-sm-3 portfolio-piece">
 
-                <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+                  <?php
+                    $thumbnail_id = get_post_thumbnail_id();
+                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumnail-size', true);
+                  ?>
+
+                  <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+
+                </div>
 
                 <?php endwhile; endif; wp_reset_postdata(); ?>
               </div>
@@ -115,8 +119,9 @@
           $thumbnail_id = get_post_thumbnail_id();
           $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'medium', true);
         ?>
-        <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
-
+        <div class="col-sm-4 blog-front">
+          <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+        </div>
         <?php endwhile; endif; wp_reset_postdata(); ?>
 
       </div>
