@@ -36,7 +36,7 @@ $site-max-width: 1200px
 p,h1,h2,h3,h4,li
   font-family: "Open Sans", sans-serif
 
-
+$ftm : "Futura-CondensedMedium", sans-serif
 
 //Navigation
 
@@ -52,8 +52,8 @@ p,h1,h2,h3,h4,li
     text-decoration: none
     color: #FFF
     text-transform: uppercase
-    font-weight: 300
-    font-family: "Futura"
+    font-weight: 400
+    font-family: $ftm
     font-size: 12px
     +respond-to(not-xs)
       font-size: 18px
@@ -80,8 +80,8 @@ p,h1,h2,h3,h4,li
   padding-top: 2%
   width: 100%
   margin-left: 17%
-  +respond-to(not-sm)
-    margin-left: 15%
+  // +respond-to(not-sm)
+  //   margin-left: 15%
   +respond-to(screen-xs)
     padding-top: 0
     margin-left: 0
@@ -97,7 +97,7 @@ p,h1,h2,h3,h4,li
       font-size: 14px
       padding: 4px 0
       +respond-to(not-xs)
-        font-size: 1.2vw
+        font-size: 1.6vw
 
 .navbar-toggle
   margin-top: 18px
@@ -115,43 +115,53 @@ p,h1,h2,h3,h4,li
     padding-bottom: 220px
 
 .name
-  margin-top: 22%
+  margin-top: 22.1%
   float: left
-  margin-left: 7%
+  margin-left: 35%
   padding-right: 1%
   +respond-to(not-xs)
-    margin-left: 28%
+    margin-left: 17%
   h1
-    font-family: "Futura-CondensedMedium"
+    font-family: $ftm
     color: #0e84a9
     text-transform: uppercase
     margin: 0
-    font-weight: 600
-    letter-spacing: -1px
+    text-align: left
+    font-weight: 400
+    font-size: 8.7vw
     line-height: 0.9
-    font-size: 6.2vw
+    margin-bottom: 5px
     +respond-to(not-xs)
-      font-size: 4.7vw
-      line-height: 0.9
-      letter-spacing: -3px
+      font-size: 4.75vw
+      text-align: right
+      margin-bottom: 0
+
+
 
 
 .interests
   float: none
-  margin-top: 22%
+  padding: 10px
+  margin-top: 20.7%
+  float: none
+  margin-left: 38%
   +respond-to(not-xs)
+    padding: 0
     margin-top: 22.2%
     float: left
-  h3
-    font-family: "Futura"
+    margin-left: 0
+  h4
+    font-family: $ftm
     color: #FFF
     text-transform: uppercase
     margin: 0
     line-height: 1
-    font-size: 3vw
+    font-weight: 400
+    line-height: 1
+    font-size: 3.8vw
     +respond-to(not-xs)
-      line-height: 1
       font-size: 2.1vw
+
 
 //Activities
 
@@ -169,34 +179,30 @@ p,h1,h2,h3,h4,li
   padding-bottom: 10%
   +respond-to(not-xs)
     margin-top: 3%
-    padding-bottom: 8%
   h4
-    font-family: "Futura"
+    font-family: $ftm
     color: #0e84a9
     text-transform: uppercase
-    letter-spacing: -1px
     line-height: 0.9
     font-size: 3.3vw
+    font-weight: 400
     +respond-to(not-xs)
-      font-size: 1.3vw
+      font-size: 1.6vw
+  .p1
+    margin-bottom: 80px
 
 //Projects
 .projects
   background-color: lightgray
-  padding-bottom: 10%
-  +respond-to(not-xs)
-    padding-bottom: 4%
   h3
-    font-family: "Futura"
+    font-family: $ftm
     text-transform: uppercase
     color: #0e84a9
-    font-weight: 600
-    letter-spacing: -1px
     line-height: 0.9
     font-size: 3.7vw
     margin: 7% 0 5%
     +respond-to(not-xs)
-      font-size: 1.6vw
+      font-size: 2.4vw
       margin: 4% 0 3%
   a
     float: left
@@ -216,6 +222,7 @@ a.see-more
   margin-top: 10%
   font-family: "Open Sans"
   font-size: 14px
+  margin-bottom: 5%
   +respond-to(not-xs)
     font-size: 18px
     margin-left: 40%
@@ -233,7 +240,7 @@ blockquote
   font-weight: 300
   font-family: "Open Sans"
   +respond-to(not-xs)
-    font-size: 1.7vw
+    font-size: 2vw
     margin: 4% 6% 0 10%
 
 blockquote:before, blockquote:after
@@ -269,16 +276,15 @@ cite
 //Latest
 .latest
   h3
-    font-family: "Futura"
+    font-family: $ftm
     text-transform: uppercase
     color: #0e84a9
-    font-weight: 600
-    letter-spacing: -1px
+    font-weight: 400
     line-height: 0.9
     font-size: 3.7vw
     margin: 7% 0 5%
     +respond-to(not-xs)
-      font-size: 1.6vw
+      font-size: 2.4vw
       margin: 6% 0 5%
   a
     float: left
@@ -303,6 +309,7 @@ cite
 //Portfolio
 
 .genre
+  margin-left: 1%
   ul
     list-style-type: none
     padding: 0
@@ -318,7 +325,9 @@ cite
   padding-right: 5px
   padding-left: 5px
   img
-    max-width: 100%
+    width: 100%
+    max-height: 370px
+    margin-bottom: 2%
 .portfolio-image
   img
     max-width: 100%
@@ -338,10 +347,6 @@ cite
     margin-top: 30px
     text-align: right
 
-
-
-
-
 //Blog Listings
 
 article.post
@@ -352,6 +357,10 @@ article.post
 footer
   background-color: #0a6683
   color: #FFF
+  a
+    color: #FFF
+    &:hover
+      color: #FFF
   p
     font-weight: 300
     padding: 14px 0 8px
@@ -360,7 +369,7 @@ footer
     +respond-to(not-xs)
       font-size: 14px
   i
-    margin: 14px 0 8px 10px
+    margin: 14px 0 4px 8px
     +respond-to(not-xs)
       margin: 14px 0 8px 40px
   .fa-2x

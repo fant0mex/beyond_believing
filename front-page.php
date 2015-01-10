@@ -24,7 +24,7 @@
           </div>
           <div class="col-sm-4">
             <h4>DESIGN</h4>
-            <p>
+            <p class="p1">
               Donec id elit non mi porta gravida at eget metus.
               Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
             </p>
@@ -34,7 +34,7 @@
           </div>
           <div class="col-sm-4">
             <h4>COSPLAY</h4>
-            <p>
+            <p class="p1">
               Donec id elit non mi porta gravida at eget metus.
               Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
             </p>
@@ -75,14 +75,15 @@
                 <?php
                   $args = array(
                   'post_type'=>'portfolio',
-                  'posts_per_page' => 4,
+                  'posts_per_page' => 1,
                   );
+
                   $the_query = new WP_Query($args);
                 ?>
 
-                <?php if (have_posts()) : while($the_query->have_posts()) : $the_query->the_post();?>
+                <?php if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();?>
 
-                <div class="col-sm-3 portfolio-piece">
+                <div class="col-sm-6 portfolio-piece">
 
                   <?php
                     $thumbnail_id = get_post_thumbnail_id();
@@ -93,7 +94,80 @@
 
                 </div>
 
-                <?php endwhile; endif; wp_reset_postdata(); ?>
+                <?php endwhile; endif; wp_reset_postdata();
+
+                  $args2 = array(
+                    'post_type'=>'cosplay',
+                    'posts_per_page' => 1,
+                    );
+
+                  $query2 = new WP_Query( $args2 );
+                ?>
+
+                <?php if (have_posts()) : while ($query2->have_posts()) : $query2->the_post();?>
+
+                <div class="col-sm-6 portfolio-piece">
+
+                  <?php
+                    $thumbnail_id = get_post_thumbnail_id();
+                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumnail-size', true);
+                  ?>
+
+                  <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+
+                </div>
+
+                <?php endwhile; endif; wp_reset_postdata();
+
+                $args2 = array(
+                    'post_type'=>'cosplay',
+                    'posts_per_page' => 1,
+                    'offset'=>1,
+                    );
+
+                  $query2 = new WP_Query( $args2 );
+                ?>
+
+                <?php if (have_posts()) : while ($query2->have_posts()) : $query2->the_post();?>
+
+                <div class="col-sm-6 portfolio-piece">
+
+                  <?php
+                    $thumbnail_id = get_post_thumbnail_id();
+                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumnail-size', true);
+                  ?>
+
+                  <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+
+                </div>
+
+                <?php endwhile; endif; wp_reset_postdata();
+
+                $args = array(
+                  'post_type'=>'portfolio',
+                  'posts_per_page' => 1,
+                  'offset'=> 1,
+                  );
+
+                  $the_query = new WP_Query($args);
+                ?>
+
+                <?php if (have_posts()) : while ($the_query->have_posts()) : $the_query->the_post();?>
+
+                <div class="col-sm-6 portfolio-piece">
+
+                  <?php
+                    $thumbnail_id = get_post_thumbnail_id();
+                    $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumnail-size', true);
+                  ?>
+
+                  <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+
+                </div>
+
+                <?php endwhile; endif; wp_reset_postdata();
+
+                ?>
               </div>
             </div>
           </div>

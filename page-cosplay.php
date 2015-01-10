@@ -1,6 +1,6 @@
 <?php
 /*
-  Template Name: Portfolio Grid Template
+  Template Name: Cosplay Grid Template
 */
 ?>
 <?php get_header(); ?>
@@ -25,26 +25,10 @@
       </div>
 
       <div class="row">
-        <div class="genre">
-          <ul>
-            <a href="#"><li>
-              Design
-            </li></a>
-            <a href="#"><li>
-              Video
-            </li></a>
-            <a href="#"><li>
-              Photography
-            </li></a>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row">
 
         <?php
           $args = array(
-            'post_type'=>'portfolio'
+            'post_type'=>'cosplay'
           );
           $the_query = new WP_Query($args);
         ?>
