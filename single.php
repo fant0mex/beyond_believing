@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <div class="container">
       <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-12">
 
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -12,8 +12,14 @@
                 <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
               </em></p>
             </div>
+            <div class="image">
+              <?php
+              if ( has_post_thumbnail() ) {
+                the_post_thumbnail();
+              }
+              ?>
             <?php the_content(); ?>
-
+            </div>
             <hr>
 
             <?php comments_template(); ?>
@@ -27,7 +33,7 @@
           <?php endif; ?>
         </div>
 
-          <?php get_sidebar('blog'); ?>
+
 
       </div>
 

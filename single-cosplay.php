@@ -7,7 +7,7 @@
         </div>
         <div class="col-xs-3 prev-next">
           <?php next_post_link('%link', '<span class="glyphicon glyphicon-circle-arrow-left"></span>'); ?>
-          <a href="<?php bloginfo(); ?>/?p=7"><span class="glyphicon glyphicon-th"></span></a>
+          <a href="<?php bloginfo(); ?>/?p=50"><span class="glyphicon glyphicon-th"></span></a>
           <?php previous_post_link('%link', '<span class="glyphicon glyphicon-circle-arrow-right"></span>'); ?>
         </div>
       </div>

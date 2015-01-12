@@ -194,7 +194,8 @@
           $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'medium', true);
         ?>
         <div class="col-sm-4 blog-front">
-          <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+          <a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"><h4><?php the_title(); ?></h4></a>
+
         </div>
         <?php endwhile; endif; wp_reset_postdata(); ?>
 

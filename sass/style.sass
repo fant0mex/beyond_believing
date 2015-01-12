@@ -68,10 +68,10 @@ $ftm : "Futura-CondensedMedium", sans-serif
     padding-bottom: 6px
     +respond-to(not-xs)
       position: fixed
-      width: 6vw
+      width: 7%
       left: 50%
-      margin-left: -3%
-      top: 18%
+      margin-left: -3.5%
+      top: 4%
 
 .menu
   list-style: none
@@ -79,7 +79,7 @@ $ftm : "Futura-CondensedMedium", sans-serif
   padding: 0
   padding-top: 2%
   width: 100%
-  margin-left: 17%
+  margin: 0 8%
   // +respond-to(not-sm)
   //   margin-left: 15%
   +respond-to(screen-xs)
@@ -98,7 +98,11 @@ $ftm : "Futura-CondensedMedium", sans-serif
       padding: 4px 0
       +respond-to(not-xs)
         font-size: 1.6vw
-
+#menu-item-85
+  display: none
+  +respond-to(not-xs)
+    visibility: hidden
+    display: inline-block
 .navbar-toggle
   margin-top: 18px
 
@@ -223,10 +227,17 @@ a.see-more
   font-family: "Open Sans"
   font-size: 14px
   margin-bottom: 5%
+  -webkit-transition: all .25s linear
+  transition: all .25s linear
   +respond-to(not-xs)
     font-size: 18px
     margin-left: 40%
     margin-top: 4%
+  &:hover
+    color: #FFF
+    background-color: #0e84a9
+    transition-delay: 0s
+
 
 //Quote
 
@@ -321,16 +332,23 @@ cite
       border: 3px solid #0e84a9
       border-radius: 3px
       padding: 10px 30px
+      -webkit-transition: all .25s linear
+      transition: all .25s linear
+      &:hover
+        color: #FFF
+        background-color: #0e84a9
+        transition-delay: 0s
 .portfolio-piece
   padding-right: 5px
   padding-left: 5px
-  display: inline-block
+  max-height: 260px
   img
     width: 100%
-    max-height: 370px
+    max-height: 100%
     margin-bottom: 2%
+
   span.blue-overlay
-    background: rgba(14, 132, 169, 0.3)
+    background: rgba(14, 132, 169, 0.6)
     visibility: hidden
     opacity: 0
     transition: visibility 0s linear 0.5s, opacity 0.3s linear
@@ -345,6 +363,14 @@ cite
       font-family: $ftm
       text-align: center
       padding-top: 20%
+      font-size: 50px
+    h3
+      color: #FFF
+      font-family: $ftm
+      text-align: center
+      padding-top: 20%
+      font-size: 35px
+
   a:hover span.blue-overlay
     visibility: visible
     opacity: 1
@@ -358,8 +384,15 @@ cite
   padding-left: 5px
   padding-right: 5px
   padding-bottom: 30px
+  a
+    text-decoration: none
+    margin-left: 5%
+    &:hover
+      color: #428bca
   img
     max-width: 100%
+  h4
+    margin-left: 5%
 
 .prev-next
   margin-top: 32px

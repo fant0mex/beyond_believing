@@ -24,7 +24,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <!-- <div class="row">
         <div class="genre">
           <ul>
             <a href="#"><li>
@@ -38,7 +38,7 @@
             </li></a>
           </ul>
         </div>
-      </div>
+      </div> -->
 
       <div class="row">
 
@@ -58,7 +58,7 @@
             $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumnail-size', true);
           ?>
 
-          <p><a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"></a></p>
+          <a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"><span class='blue-overlay'><h3><?php the_title(); ?></h3></span></a>
 
         </div>
 
