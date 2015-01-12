@@ -78,10 +78,10 @@ p, h1, h2, h3, h4, li {
         .menu li a {
           font-size: 1.6vw; } }
 
-#menu-item-85 {
+#menu-item-1306 {
   display: none; }
   @media only screen and (min-width: 768px) {
-    #menu-item-85 {
+    #menu-item-1306 {
       visibility: hidden;
       display: inline-block; } }
 
@@ -341,7 +341,6 @@ cite {
       color: #FFF;
       font-family: "Futura-CondensedMedium", sans-serif;
       text-align: center;
-      padding-top: 20%;
       font-size: 50px; }
     .portfolio-piece span.blue-overlay h3 {
       color: #FFF;
