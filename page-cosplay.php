@@ -48,7 +48,7 @@
 
         <?php $portfolio_count = $the_query->current_post + 1; ?>
 
-        <?php if ($portfolio_count % 4 == 0): ?>
+        <?php if ($portfolio_count % 3 == 0): ?>
 
         </div>
 

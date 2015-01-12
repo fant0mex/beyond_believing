@@ -333,9 +333,9 @@ cite {
     opacity: 0;
     transition: visibility 0s linear 0.5s, opacity 0.3s linear;
     top: 0;
-    left: 0;
+    left: 1%;
     height: 97.2%;
-    width: 100%;
+    width: 98%;
     position: absolute;
     z-index: 5; }
     .portfolio-piece span.blue-overlay h2 {
@@ -350,13 +350,10 @@ cite {
       text-align: center;
       padding-top: 20%;
       font-size: 35px; }
-
-.cosplay img {
-  height: 253px; }
-.cosplay a:hover span.blue-overlay {
-  visibility: visible;
-  opacity: 1;
-  transition-delay: 0s; }
+  .portfolio-piece a:hover span.blue-overlay {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s; }
 
 .portfolio-image img {
   max-width: 100%; }
