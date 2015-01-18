@@ -37,7 +37,7 @@
         </div>
       </div>
 
-      <div class="row">
+
         <?php
           $args = array(
             'post_type'=>'portfolio'
@@ -45,10 +45,10 @@
           $the_query = new WP_Query($args);
         ?>
 
-        <?php if (have_posts()) : while($the_query->have_posts()) : $the_query->the_post();?>
+        <?php if ( $the_query->have_posts() ) : ?>
 
         <div id="isotope-list">
-          <?php
+          <?php while ( $the_query->have_posts() ) : $the_query->the_post();
             $thumbnail_id = get_post_thumbnail_id();
             $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'thumnail-size', true);
             $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item
@@ -57,20 +57,23 @@
               $termsString .= $term->slug.' '; //create a string that has all the slugs
             }
           ?>
+          <div class="row">
           <div class="col-md-4 portfolio-piece cosplay <?php echo $termsString; ?>item">
             <a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"><span class='blue-overlay'><h3><?php the_title(); ?></h3></span></a>
           </div>
 
         <?php $portfolio_count = $the_query->current_post + 1; ?>
-
-        <?php if ($portfolio_count % 3 == 0): ?>
         </div>
+
+        <?php endwhile;  ?>
+        <?php if ($portfolio_count % 3 == 0): ?>
+
       </div>
       <div class="row">
 
         <?php endif; ?>
 
-        <?php endwhile; endif; ?>
+        <?php endif; ?>
       </div>
     </div>
   </div>
