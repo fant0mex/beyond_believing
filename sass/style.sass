@@ -68,10 +68,10 @@ $ftm : "Futura-CondensedMedium", sans-serif
     padding-bottom: 6px
     +respond-to(not-xs)
       position: fixed
-      width: 7%
+      width: 6%
       left: 50%
-      margin-left: -3.5%
-      top: 4%
+      margin-left: -3%
+      top: 9%
 
 .menu
   list-style: none
@@ -79,17 +79,20 @@ $ftm : "Futura-CondensedMedium", sans-serif
   padding: 0
   padding-top: 2%
   width: 100%
-  margin: 0 8%
+  text-align: center
+  // margin: 0 8%
   // +respond-to(not-sm)
   //   margin-left: 15%
   +respond-to(screen-xs)
     padding-top: 0
     margin-left: 0
   li
-    display: inline
+    display: inline-block
+    width: 24%
+    max-width: 24%
     +respond-to(not-sm)
-    padding: 0 14% 0 0
-    display: inline
+      // padding: 0 14% 0 0
+      // display: inline
     +respond-to(screen-xs)
       margin-top: 10px
       display: block
@@ -213,6 +216,7 @@ $ftm : "Futura-CondensedMedium", sans-serif
     position: relative
 .my-work
   padding-bottom: 10%
+
 a.see-more
   float: none
   display: inline-block
@@ -237,6 +241,9 @@ a.see-more
     color: #FFF
     background-color: #0e84a9
     transition-delay: 0s
+  &.see-portfolio
+    +respond-to(not-xs)
+      font-size: 14px
 
 
 //Quote
@@ -297,6 +304,8 @@ cite
     +respond-to(not-xs)
       font-size: 2.4vw
       margin: 6% 0 5%
+
+
   a
     float: left
     position: relative
@@ -307,6 +316,7 @@ cite
 .page-header
   margin-top: 100px
   color: #444
+  border: none
 
 .sidebar
   margin-top: 100px
@@ -341,6 +351,9 @@ cite
 .portfolio-piece
   padding-right: 5px
   padding-left: 5px
+  a
+    float: left
+    position: relative
 
 
   img
@@ -356,9 +369,9 @@ cite
     opacity: 0
     transition: visibility 0s linear 0.5s, opacity 0.3s linear
     top: 0
-    left: 1%
+    left: 0
     height: 97.2%
-    width: 98%
+    width: 100%
     position: absolute
     z-index: 5
     h2
@@ -384,18 +397,28 @@ cite
     max-width: 100%
 
 .blog-front
-  padding-left: 5px
-  padding-right: 5px
+  // padding-left: 5px
+  // padding-right: 5px
   padding-bottom: 30px
   a
+    padding: 0
     text-decoration: none
-    margin-left: 5%
+    // margin-left: 5%
     &:hover
       color: #428bca
   img
     max-width: 100%
   h4
-    margin-left: 5%
+    font-family: $ftm
+    text-transform: uppercase
+    color: #0e84a9
+    font-weight: 400
+    line-height: 0.9
+    font-size: 3.7vw
+    margin: 7% 0 5%
+    +respond-to(not-xs)
+      font-size: 1.4vw
+      margin: 6% 0 5%
 
 .prev-next
   margin-top: 32px
@@ -463,5 +486,12 @@ footer
     position: absolute
     top: 0
     width: 50%
+
+.push
+  margin-top: 130px
+
+.prev-next
+  a
+    color: #0a6683
 
 

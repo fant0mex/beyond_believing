@@ -47,10 +47,10 @@ p, h1, h2, h3, h4, li {
     @media only screen and (min-width: 768px) {
       .navbar-header img {
         position: fixed;
-        width: 7%;
+        width: 6%;
         left: 50%;
-        margin-left: -3.5%;
-        top: 4%; } }
+        margin-left: -3%;
+        top: 9%; } }
 
 .menu {
   list-style: none;
@@ -58,15 +58,15 @@ p, h1, h2, h3, h4, li {
   padding: 0;
   padding-top: 2%;
   width: 100%;
-  margin: 0 8%; }
+  text-align: center; }
   @media only screen and (max-width: 767px) {
     .menu {
       padding-top: 0;
       margin-left: 0; } }
   .menu li {
-    display: inline;
-    padding: 0 14% 0 0;
-    display: inline; }
+    display: inline-block;
+    width: 24%;
+    max-width: 24%; }
     @media only screen and (max-width: 767px) {
       .menu li {
         margin-top: 10px;
@@ -222,6 +222,9 @@ a.see-more {
     color: #FFF;
     background-color: #0e84a9;
     transition-delay: 0s; }
+  @media only screen and (min-width: 768px) {
+    a.see-more.see-portfolio {
+      font-size: 14px; } }
 
 blockquote {
   position: relative;
@@ -288,7 +291,8 @@ cite {
 
 .page-header {
   margin-top: 100px;
-  color: #444; }
+  color: #444;
+  border: none; }
 
 .sidebar {
   margin-top: 100px; }
@@ -321,6 +325,9 @@ cite {
 .portfolio-piece {
   padding-right: 5px;
   padding-left: 5px; }
+  .portfolio-piece a {
+    float: left;
+    position: relative; }
   .portfolio-piece img {
     width: 100%;
     max-height: 100%;
@@ -333,9 +340,9 @@ cite {
     opacity: 0;
     transition: visibility 0s linear 0.5s, opacity 0.3s linear;
     top: 0;
-    left: 1%;
+    left: 0;
     height: 97.2%;
-    width: 98%;
+    width: 100%;
     position: absolute;
     z-index: 5; }
     .portfolio-piece span.blue-overlay h2 {
@@ -359,18 +366,26 @@ cite {
   max-width: 100%; }
 
 .blog-front {
-  padding-left: 5px;
-  padding-right: 5px;
   padding-bottom: 30px; }
   .blog-front a {
-    text-decoration: none;
-    margin-left: 5%; }
+    padding: 0;
+    text-decoration: none; }
     .blog-front a:hover {
       color: #428bca; }
   .blog-front img {
     max-width: 100%; }
   .blog-front h4 {
-    margin-left: 5%; }
+    font-family: "Futura-CondensedMedium", sans-serif;
+    text-transform: uppercase;
+    color: #0e84a9;
+    font-weight: 400;
+    line-height: 0.9;
+    font-size: 3.7vw;
+    margin: 7% 0 5%; }
+    @media only screen and (min-width: 768px) {
+      .blog-front h4 {
+        font-size: 1.4vw;
+        margin: 6% 0 5%; } }
 
 .prev-next {
   margin-top: 32px;
@@ -443,3 +458,8 @@ footer {
     position: absolute;
     top: 0;
     width: 50%; } }
+.push {
+  margin-top: 130px; }
+
+.prev-next a {
+  color: #0a6683; }

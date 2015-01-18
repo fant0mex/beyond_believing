@@ -3,7 +3,7 @@
     <div class="page-header">
       <div class="row">
         <div class="col-xs-9">
-          <h1>Single Cosplay</h1>
+         <!--  <h1>Single Cosplay</h1> -->
         </div>
         <div class="col-xs-3 prev-next">
           <?php next_post_link('%link', '<span class="glyphicon glyphicon-circle-arrow-left"></span>'); ?>

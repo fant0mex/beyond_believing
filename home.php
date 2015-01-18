@@ -1,18 +1,19 @@
 <?php get_header(); ?>
   <div class="container">
       <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-md-9">
+        <div class="col-md-9 push">
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle Sidebar</button>
           </p>
-          <div class="page-header">
+<!--           <div class="page-header">
             <h1><?php wp_title(''); ?></h1>
-          </div>
+          </div> -->
 
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
             <article class="post">
               <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
               <p><em>
                 By <?php the_author(); ?> on <?php echo the_time('l F j Y'); ?> in <?php the_category(',  '); ?>
                 <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>

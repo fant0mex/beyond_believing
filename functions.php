@@ -2,6 +2,7 @@
 
 function theme_styles() {
     wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/css/bootstrap.min.css');
+    wp_enqueue_style('isotope_css', get_template_directory_uri() . '/css/isotope.css');
     wp_enqueue_style('main_css', get_template_directory_uri() . '/style.css');
 }
 
@@ -66,6 +67,16 @@ create_widget('Front Page Right','front-right','Displays on the right of the hom
 
 create_widget('Page Sidebar','page','Displays on the side of pages with a sidebar');
 create_widget('Blog Sidebar','blog','Displays on the side of pages in the blog section');
+
+
+function add_isotope() {
+    wp_register_script( 'isotope', get_template_directory_uri().'/js/isotope.js', array('jquery'),  true );
+    wp_register_script( 'isotope-init', get_template_directory_uri().'/js/filtering.js', array('jquery', 'isotope'),  true );
+
+    wp_enqueue_script('isotope-init');
+}
+
+add_action( 'wp_enqueue_scripts', 'add_isotope' );
 
 
 

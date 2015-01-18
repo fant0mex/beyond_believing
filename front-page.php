@@ -186,19 +186,20 @@
     <div class="container">
       <div class="latest">
         <h3>Latest Blog Posts</h3>
+          <div class="row">
 
-        <?php $the_query = new WP_Query( 'showposts=3' ); ?>
-        <?php if (have_posts()) :  while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-        <?php
-          $thumbnail_id = get_post_thumbnail_id();
-          $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'medium', true);
-        ?>
-        <div class="col-sm-4 blog-front">
-          <a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"><h4><?php the_title(); ?></h4></a>
+            <?php $the_query = new WP_Query( 'showposts=3' ); ?>
+            <?php if (have_posts()) :  while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+            <?php
+              $thumbnail_id = get_post_thumbnail_id();
+              $thumbnail_url = wp_get_attachment_image_src($thumbnail_id, 'medium', true);
+            ?>
+            <div class="col-sm-4 blog-front">
+              <a href="<?php the_permalink(); ?>"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php the_title(); ?> graphic"><h4><?php the_title(); ?></h4></a>
 
-        </div>
-        <?php endwhile; endif; wp_reset_postdata(); ?>
-
+            </div>
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+          </div>
       </div>
       <!-- Example row of columns -->
 <!--       <div class="row">

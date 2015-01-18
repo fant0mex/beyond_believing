@@ -1,0 +1,1 @@
+jQuery(function($){var e=$("#isotope-list");e.isotope({itemSelector:".item",layoutMode:"masonry"});var t=$("#filters"),s=t.find("a");s.click(function(){var s=$(this);if(s.hasClass("selected"))return!1;var r=s.parents("#filters");t.find(".selected").removeClass("selected"),s.addClass("selected");var i=$(this).attr("data-filter");return e.isotope({filter:i}),!1})});
