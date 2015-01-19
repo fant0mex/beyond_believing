@@ -31,7 +31,7 @@ p, h1, h2, h3, h4, li {
     color: #FFF;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: "Futura-CondensedMedium", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 12px; }
     @media only screen and (min-width: 768px) {
       .navbar a {
@@ -108,7 +108,7 @@ p, h1, h2, h3, h4, li {
     .name {
       margin-left: 17%; } }
   .name h1 {
-    font-family: "Futura-CondensedMedium", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #0e84a9;
     text-transform: uppercase;
     margin: 0;
@@ -136,7 +136,7 @@ p, h1, h2, h3, h4, li {
       float: left;
       margin-left: 0; } }
   .interests h4 {
-    font-family: "Futura-CondensedMedium", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #FFF;
     text-transform: uppercase;
     margin: 0;
@@ -165,7 +165,7 @@ p, h1, h2, h3, h4, li {
     .activities {
       margin-top: 3%; } }
   .activities h4 {
-    font-family: "Futura-CondensedMedium", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #0e84a9;
     text-transform: uppercase;
     line-height: 0.9;
@@ -180,7 +180,7 @@ p, h1, h2, h3, h4, li {
 .projects {
   background-color: lightgray; }
   .projects h3 {
-    font-family: "Futura-CondensedMedium", sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: #0e84a9;
     line-height: 0.9;
@@ -273,7 +273,7 @@ cite {
       font-size: 1.4vw; } }
 
 .latest h3 {
-  font-family: "Futura-CondensedMedium", sans-serif;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: #0e84a9;
   font-weight: 400;
@@ -347,13 +347,13 @@ cite {
     z-index: 5; }
     .portfolio-piece span.blue-overlay h2 {
       color: #FFF;
-      font-family: "Futura-CondensedMedium", sans-serif;
+      font-family: "Roboto", sans-serif;
       text-align: center;
       padding-top: 20%;
       font-size: 50px; }
     .portfolio-piece span.blue-overlay h3 {
       color: #FFF;
-      font-family: "Futura-CondensedMedium", sans-serif;
+      font-family: "Roboto", sans-serif;
       text-align: center;
       padding-top: 20%;
       font-size: 35px; }
@@ -375,7 +375,7 @@ cite {
   .blog-front img {
     max-width: 100%; }
   .blog-front h4 {
-    font-family: "Futura-CondensedMedium", sans-serif;
+    font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: #0e84a9;
     font-weight: 400;
@@ -463,23 +463,3 @@ footer {
 
 .prev-next a {
   color: #0a6683; }
-
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-.clearfix {
-  display: inline-block; }
-
-/* start commented backslash hack \ */
-* html .clearfix {
-  height: 1%; }
-
-.clearfix {
-  display: block; }
-
-/* close commented backslash hack */
