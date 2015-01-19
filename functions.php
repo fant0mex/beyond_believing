@@ -70,10 +70,12 @@ create_widget('Blog Sidebar','blog','Displays on the side of pages in the blog s
 
 
 function add_isotope() {
-    wp_register_script( 'isotope', get_template_directory_uri().'/js/isotope.js', array('jquery'),  true );
+    wp_register_script( 'isotope', get_template_directory_uri().'/js/min/isotope-min.js', array('jquery'),  true );
     wp_register_script( 'isotope-init', get_template_directory_uri().'/js/filtering.js', array('jquery', 'isotope'),  true );
+    wp_register_script( 'isotope-loaded', get_template_directory_uri().'/js/imagesloaded.pkgd.min.js', array('jquery'),  true );
 
     wp_enqueue_script('isotope-init');
+    wp_enqueue_script('isotope-loaded');
 }
 
 add_action( 'wp_enqueue_scripts', 'add_isotope' );
