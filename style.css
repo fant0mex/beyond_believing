@@ -31,7 +31,7 @@ p, h1, h2, h3, h4, li {
     color: #FFF;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: "Roboto", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 12px; }
     @media only screen and (min-width: 768px) {
       .navbar a {
@@ -108,14 +108,14 @@ p, h1, h2, h3, h4, li {
     .name {
       margin-left: 17%; } }
   .name h1 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: #0e84a9;
     text-transform: uppercase;
     margin: 0;
     text-align: left;
     font-weight: 400;
     font-size: 8.7vw;
-    line-height: 0.9;
+    line-height: 0.92;
     margin-bottom: 5px; }
     @media only screen and (min-width: 768px) {
       .name h1 {
@@ -136,11 +136,11 @@ p, h1, h2, h3, h4, li {
       float: left;
       margin-left: 0; } }
   .interests h4 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: #FFF;
     text-transform: uppercase;
     margin: 0;
-    line-height: 1;
+    line-height: 1.05;
     font-weight: 400;
     line-height: 1;
     font-size: 3.8vw; }
@@ -165,7 +165,7 @@ p, h1, h2, h3, h4, li {
     .activities {
       margin-top: 3%; } }
   .activities h4 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Oswald", sans-serif;
     color: #0e84a9;
     text-transform: uppercase;
     line-height: 0.9;
@@ -180,7 +180,7 @@ p, h1, h2, h3, h4, li {
 .projects {
   background-color: lightgray; }
   .projects h3 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: #0e84a9;
     line-height: 0.9;
@@ -273,7 +273,7 @@ cite {
       font-size: 1.4vw; } }
 
 .latest h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: #0e84a9;
   font-weight: 400;
@@ -347,13 +347,13 @@ cite {
     z-index: 5; }
     .portfolio-piece span.blue-overlay h2 {
       color: #FFF;
-      font-family: "Roboto", sans-serif;
+      font-family: "Oswald", sans-serif;
       text-align: center;
       padding-top: 20%;
       font-size: 50px; }
     .portfolio-piece span.blue-overlay h3 {
       color: #FFF;
-      font-family: "Roboto", sans-serif;
+      font-family: "Oswald", sans-serif;
       text-align: center;
       padding-top: 20%;
       font-size: 35px; }
@@ -375,7 +375,7 @@ cite {
   .blog-front img {
     max-width: 100%; }
   .blog-front h4 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Oswald", sans-serif;
     text-transform: uppercase;
     color: #0e84a9;
     font-weight: 400;
