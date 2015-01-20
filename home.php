@@ -10,22 +10,26 @@
           </div> -->
 
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="col-md-4">
-              <article class="post">
-                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
-            </div>
-            <div class="col-md-8" style="margin-top: 57px;">
-                <p><em>
-                  By <?php the_author(); ?> on <?php echo the_time('l F j Y'); ?> in <?php the_category(',  '); ?>
-                  <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
-                </em></p>
 
-                <?php the_excerpt(); ?>
+            <article class="post">
+              <div class="row">
+                <div class="col-md-5">
+                  <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
+                </div>
+                <div class="col-md-6">
+                  <div class="excerpt">
+                  <p><em>
+                    By <?php the_author(); ?> on <?php echo the_time('l F j Y'); ?> in <?php the_category(',  '); ?>
+                    <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+                  </em></p>
 
-                <hr>
-              </article>
-            </div>
+                  <?php the_excerpt(); ?>
+                </div>
+                </div>
+              </div>
+            </article>
+
           <?php endwhile; else: ?>
             <div class="page-header">
               <h1>Oh No!</h1>
